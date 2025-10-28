@@ -81,6 +81,27 @@
       background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
       pointer-events: none;
     }
+
+    /* Team highlight */
+    .team-highlight {
+      position: relative;
+      border: 3px solid #60a5fa;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+    }
+    .team-highlight::after {
+      content: 'You';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #60a5fa;
+      color: white;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body class="bg-gradient-to-br from-gray-900 to-black text-gray-100 antialiased leading-relaxed">
@@ -127,7 +148,32 @@
 
       <!-- Award Photo -->
       <div class="photo-frame">
-        <img src="https://i.imgur.com/QrKJZzE.jpeg" alt="Mehedi Hasan - NASA Space Apps Champion" class="w-full h-auto object-cover rounded-xl">
+        <img src="images/me.jpg" alt="Mehedi Hasan - NASA Space Apps Champion" class="w-full h-auto object-cover rounded-xl">
+      </div>
+    </section>
+
+    <!-- Team Polaris Section -->
+    <section id="team" class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">Team Polaris — NASA Space Apps Challenge 2025 Champions</h3>
+      <p class="mb-4 text-gray-300">I was part of Team Polaris, which won the Barisal Division championship. Our team combined expertise in ML, full-stack development, data analysis, and UI/UX design to create a winning solution.</p>
+
+      <div class="relative">
+        <img src="images/team-polaris.jpg" alt="Team Polaris - NASA International Space Apps Challenge 2025" class="w-full h-auto rounded-xl">
+        <!-- Highlight your position -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="team-highlight absolute bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-32 rounded-full overflow-hidden">
+            <img src="images/me.jpg" alt="Md. Mehedi Hasan" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Award Ceremony Photo -->
+    <section class="bg-gray-800/60 p-6 rounded-xl glass animate-fade-in-up">
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-4">Award Ceremony</h3>
+      <p class="mb-4 text-gray-300">Receiving the champion trophy from our esteemed judge. A proud moment for our team and our university.</p>
+      <div class="photo-frame">
+        <img src="images/award-ceremony.jpg" alt="NASA Space Apps Challenge 2025 Award Ceremony" class="w-full h-auto object-cover rounded-xl">
       </div>
     </section>
 
